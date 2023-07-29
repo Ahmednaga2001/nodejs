@@ -6,7 +6,7 @@ geocode((error, data) => {
     console.log(error);
   } else {
     console.log(data);
-    forecast((error, data1) => {
+    forecast(data.longtitude,data.latitude,(error, data1) => {
       if (error) {
         console.log(error);
       } else {

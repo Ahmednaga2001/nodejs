@@ -1,8 +1,9 @@
 const request = require("request")
 
-const url = `https://api.weatherapi.com/v1/current.json?key=d94781cba6904bcaa5e210921232407&q=egypt`
 
-const data = (callback)=>{
+
+const data = (longtitude , latitude , callback)=>{
+  const url = `https://api.weatherapi.com/v1/current.json?key=d94781cba6904bcaa5e210921232407&q=${longtitude},${latitude}`
     request({ url, json: true }, (error, response) => {
       if (error) {
        callback("cant" , undefined)
