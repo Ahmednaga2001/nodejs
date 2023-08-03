@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div>{{>header}}</div>
+
+    <div class="alert alert-primary text-center mt-5 fs-2" role="alert">
+   {{title}}
+</div>
+    <div class="alert alert-success text-center mt-5 fs-2" role="alert">
+  {{desc}}
+</div>
+<form class="d-flex justify-content-center" id="form1">
+
+  <div class="col-auto ">
+    <label for="inputAddress" class="visually-hidden">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Search For Weather</button>
+  </div>
+</form>
+<div class="bg-info  text-center ">
+  <p id="location"></p> 
+<p id = "longtitude"></p>
+<p id = "latitude"></p>
+<p id="forecast"></p> 
+<p id="error"></p> 
+
+</div>
+
+   <script src="js/main.js"></script>
+ 
+   <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
