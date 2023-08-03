@@ -11,7 +11,7 @@ const viewsDir = path.join(__dirname,"../temp1/views")
 app.set("views" , viewsDir)
 
 const hbs = require("hbs");
-const { error } = require("console")
+
 const partialspath = path.join(__dirname, "../temp1/partials");
 hbs.registerPartials(partialspath);
 
